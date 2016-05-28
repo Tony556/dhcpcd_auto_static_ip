@@ -1,0 +1,1 @@
+# dhcpcd_auto_static_ip
