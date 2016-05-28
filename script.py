@@ -1,3 +1,5 @@
+import sys, subprocess
+
 def staticIPSetup():
     #Getting the current RUNNING network interface. Keyword is RUNNING, since it searches for the BMRU tag on the interface. Unknown how it deals with wlan and ethernet connected.
     detectedInt = subprocess.check_output('netstat -i | grep BMRU', shell=True).split()[0]
